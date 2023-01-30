@@ -1,0 +1,12 @@
+<p>home works!</p>
+<form [formGroup]="formLogin">
+    <label for="">Product</label>
+    <input type="text" formControlName="product">
+    <label for="">Cost</label>
+    <input type="text" formControlName="cost">
+    <button type="submit" (click)="onSubmit()">Send</button>
+</form>
+<li>
+    <button mat-raised-button >Pick one</button>
+  </li>
+<router-outlet></router-outlet>

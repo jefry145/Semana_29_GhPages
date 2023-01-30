@@ -1,0 +1,15 @@
+<p>postds works!</p>
+<table>
+    <thead>
+        <th>ID</th>
+        <th>Product</th>
+        <th>Cost</th>
+    
+    </thead>
+    <tbody *ngFor="let element of Products">
+        <td>{{element.id}}</td>
+        <td>{{element.product}}</td>
+        <td>{{element.cost}}</td>
+        <td><button (click)="Delete(element)">Eliminar</button></td>
+    </tbody>
+</table>
